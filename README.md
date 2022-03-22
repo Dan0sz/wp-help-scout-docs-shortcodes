@@ -12,7 +12,7 @@ define('HELP_SCOUT_DOCS_API_KEY', 'xxxx');
 /* That's all, stop editing! Happy publishing. */
 ````
 
-Yes, it requires quite a bit of manual labor, but it has a few perks:
+Yes, it requires quite a bit of manual labor to set it up, but it has a few perks:
 
 - **SEO**: You can decide the URL structure yourself, which makes it much more attractive to search bots.
 - **Use your site's layout**: You're working in WordPress, which increases recognizability for your users!
