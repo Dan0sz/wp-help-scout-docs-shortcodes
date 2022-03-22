@@ -73,7 +73,7 @@ class HelpScoutDocsShortcode_Add
         $post_id   = get_the_ID();
         $post_meta = get_post_meta($post_id, self::META_KEY, true);
 
-        if (!$post_meta || isset($_GET['hs_refresh'])) {
+        if (!$post_meta || isset($_GET['refresh_docs'])) {
             $ch  = curl_init();
             $url = str_replace('{number}', $id, self::API_URL);
 
