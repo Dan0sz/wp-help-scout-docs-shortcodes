@@ -6,7 +6,7 @@ defined('ABSPATH') || exit;
  * @author    Daan van den Bergh
  *            https://ffw.press
  */
-class HelpScoutDocsShortcode_Add
+class HelpScoutDocsShortcode_Shortcodes_Docs
 {
     const API_KEY  = 'HELP_SCOUT_DOCS_API_KEY';
     const API_URL  = 'https://docsapi.helpscout.net/v1/articles/{number}';

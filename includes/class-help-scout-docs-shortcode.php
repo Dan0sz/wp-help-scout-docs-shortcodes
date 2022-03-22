@@ -25,11 +25,27 @@ class HelpScoutDocsShortcode
      */
     private function init()
     {
-        $this->add_shortcode();
+        $this->add_docs_shortcode();
+        $this->add_child_pages_menu_shortcode();
     }
 
-    private function add_shortcode()
+    /**
+     * Add Docs Shortcode
+     * 
+     * @return void 
+     */
+    private function add_docs_shortcode()
     {
-        new HelpScoutDocsShortcode_Add();
+        new HelpScoutDocsShortcode_Shortcodes_Docs();
+    }
+
+    /**
+     * Add Child Pages Menu shortcode
+     * 
+     * @return void 
+     */
+    private function add_child_pages_menu_shortcode()
+    {
+        new HelpScoutDocsShortcode_Shortcodes_ChildPagesMenu();
     }
 }
