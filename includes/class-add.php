@@ -8,7 +8,7 @@ defined('ABSPATH') || exit;
  */
 class HelpScoutDocsShortcode_Add
 {
-    const API_KEY  = '4223a6b10e4b990166b5415ef254e50b4938211e';
+    const API_KEY  = 'HELP_SCOUT_DOCS_API_KEY';
     const API_URL  = 'https://docsapi.helpscout.net/v1/articles/{number}';
     const META_KEY = '_help_scout_docs_content';
 
@@ -52,7 +52,11 @@ class HelpScoutDocsShortcode_Add
             $tag
         );
 
-        $post_meta = apply_filters('help_scout_docs_contents', $this->get_post_meta($atts['id']));
+        if (!defined(self::API_KEY)) {
+            $post_meta = 'Help Scout Docs API key not defined.';
+        } else {
+            $post_meta = apply_filters('help_scout_docs_contents', $this->get_post_meta($atts['id']));
+        }
 
         $output = "<div class='help-scout-docs'>";
 
@@ -79,7 +83,7 @@ class HelpScoutDocsShortcode_Add
 
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_USERPWD, self::API_KEY . ':x');
+            curl_setopt($ch, CURLOPT_USERPWD, HELP_SCOUT_DOCS_API_KEY . ':x');
 
             $response = json_decode(curl_exec($ch));
 

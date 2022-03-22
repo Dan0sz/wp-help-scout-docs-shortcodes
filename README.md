@@ -4,6 +4,14 @@ Because the Help Scout Docs are not compliant with GDPR I created this shortcode
 
 Once it's retrieved the contents from the Help Scout Docs API it caches the contents in the corresponding post's/page's metadata. You can refresh the contents by appending `?refresh_docs=1` to the page's URL.
 
+It requires the API-key to be set in a constant named `HELP_SCOUT_DOCS_API_KEY` in your `wp-config.php` right before `/* That's all, stop editing! Happy publishing. */`, e.g.
+
+````
+define('HELP_SCOUT_DOCS_API_KEY', 'xxxx');
+
+/* That's all, stop editing! Happy publishing. */
+````
+
 Yes, it requires quite a bit of manual labor, but it has a few perks:
 
 - **SEO**: You can decide the URL structure yourself, which makes it much more attractive to search bots.

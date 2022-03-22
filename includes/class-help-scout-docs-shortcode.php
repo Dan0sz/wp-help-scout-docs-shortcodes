@@ -25,17 +25,7 @@ class HelpScoutDocsShortcode
      */
     private function init()
     {
-        $this->define_constants();
         $this->add_shortcode();
-    }
-
-    /**
-     * Any constants we might require to e.g. access settings in a consistent manner.
-     * 
-     * @return void 
-     */
-    private function define_constants()
-    {
     }
 
     private function add_shortcode()
