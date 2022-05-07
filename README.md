@@ -1,6 +1,6 @@
 # Help Scout Docs Shortcode for WordPress
 
-Because the Help Scout Docs are not compliant with GDPR I created these shortcodes to render the contents of articles in WordPress posts/pages using a shortcode.
+Because the Help Scout Docs are not compliant with GDPR I created these shortcodes to embed the contents of Help Scout Docs articles, categories, etc. in WordPress posts/pages using a shortcode.
 
 Once contents from the Help Scout Docs API are retrieved they're cached in the database in the corresponding post's/page's metadata. You can refresh the contents by appending `?refresh_docs=1` to the page's URL.
 
@@ -17,6 +17,10 @@ Yes, it requires quite a bit of manual labor to set it up, but it has a few perk
 - **SEO**: You can decide the URL structure yourself, which makes it much more attractive to search bots.
 - **Use your site's layout**: You're working in WordPress, which increases recognizability for your users!
 - **Keep using Help Scout**: Keep using that awesome tool, because similar alternatives like ZenDesk are waaay too expensive!
+
+## Looking for an Automatic approach?
+
+If your documentation section is too large to embed manually, or you simply don't have the time to do the work, I've also built a premium [plugin which fully automates the embedding of your Help Scout Docs categories and articles into WordPress](https://ffw.press/wordpress/wp-help-scout-docs/).
 
 ## Usage
 
