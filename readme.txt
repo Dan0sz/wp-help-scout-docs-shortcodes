@@ -18,7 +18,7 @@ Once contents from the Help Scout Docs API are retrieved they're cached in the d
 
 It requires the API-key to be set in a constant named `HELP_SCOUT_DOCS_API_KEY` in your `wp-config.php` right before `/* That's all, stop editing! Happy publishing. */`, e.g.
 
-`define('HELP_SCOUT_DOCS_API_KEY', 'xxxx');
+`define('HELP_SCOUT_DOCS_API_KEY', 'your-api-key');
 
 /* That's all, stop editing! Happy publishing. */`
 
