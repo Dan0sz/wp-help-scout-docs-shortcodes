@@ -2,11 +2,11 @@
 defined('ABSPATH') || exit;
 
 /**
- * @package   Help Scout Docs Shortcode
+ * @package   Help Scout Docs Shortcodes
  * @author    Daan van den Bergh
  *            https://ffw.press
  */
-class HelpScoutDocsShortcode_Shortcodes_ChildPagesMenu
+class HelpScoutDocsShortcodes_Shortcodes_ChildPagesMenu
 {
     /**
      * 

@@ -1,14 +1,14 @@
 <?php
 defined('ABSPATH') || exit;
 /**
- * Plugin Name: Help Scout Docs Shortcode
- * Plugin URI: https://ffw.press/wordpress-plugins/help-scout-docs-shortcode/
- * Description: Use a shortcode to render Help Scout Docs in WordPress.
+ * Plugin Name: Help Scout Docs Shortcodes
+ * Plugin URI: https://wordpress.org/plugins/help-scout-docs-shortcodes/
+ * Description: Use shortcodes to embed Help Scout Docs in WordPress pages and posts.
  * Version: 1.0.0
  * Author: Daan from FFW.Press
  * Author URI: https://ffw.press
  * License: GPL2v2 or later
- * Text Domain: hsds
+ * Text Domain: help-scout-docs-shortcode
  */
 
 define('HSDS_PLUGIN_DIR', plugin_dir_path(__FILE__));
@@ -44,14 +44,14 @@ spl_autoload_register('hsds_autoload');
 /**
  * All systems GO!!!
  *
- * @return Hsds
+ * @return HelpScoutDocsShortcodes
  */
 function hsds_press_init()
 {
     static $hsds = null;
 
     if ($hsds === null) {
-        $hsds = new HelpScoutDocsShortcode();
+        $hsds = new HelpScoutDocsShortcodes();
     }
 
     return $hsds;

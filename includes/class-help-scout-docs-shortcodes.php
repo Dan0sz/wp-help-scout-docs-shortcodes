@@ -2,11 +2,11 @@
 defined('ABSPATH') || exit;
 
 /**
- * @package   Help Scout Docs Shortcode
+ * @package   Help Scout Docs Shortcodes
  * @author    Daan van den Bergh
  *            https://ffw.press
  */
-class HelpScoutDocsShortcode
+class HelpScoutDocsShortcodes
 {
     /**
      * Set Fields.
@@ -36,7 +36,7 @@ class HelpScoutDocsShortcode
      */
     private function add_docs_shortcode()
     {
-        new HelpScoutDocsShortcode_Shortcodes_Docs();
+        new HelpScoutDocsShortcodes_Shortcodes_Docs();
     }
 
     /**
@@ -46,6 +46,6 @@ class HelpScoutDocsShortcode
      */
     private function add_child_pages_menu_shortcode()
     {
-        new HelpScoutDocsShortcode_Shortcodes_ChildPagesMenu();
+        new HelpScoutDocsShortcodes_Shortcodes_ChildPagesMenu();
     }
 }

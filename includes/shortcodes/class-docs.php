@@ -2,11 +2,11 @@
 defined('ABSPATH') || exit;
 
 /**
- * @package   Help Scout Docs Shortcode
+ * @package   Help Scout Docs Shortcodes
  * @author    Daan van den Bergh
  *            https://ffw.press
  */
-class HelpScoutDocsShortcode_Shortcodes_Docs
+class HelpScoutDocsShortcodes_Shortcodes_Docs
 {
     const API_KEY  = 'HELP_SCOUT_DOCS_API_KEY';
     const API_URL  = 'https://docsapi.helpscout.net/v1/articles/{number}';
