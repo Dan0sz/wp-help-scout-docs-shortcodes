@@ -3,7 +3,7 @@ defined('ABSPATH') || exit;
 /**
  * Plugin Name: Shortcodes for Help Scout Docs
  * Plugin URI: https://wordpress.org/plugins/shortcodes-help-scout-docs/
- * Description: Embed Help Scout Docs articles in WordPress pages and posts with shortcodes.
+ * Description: Embed Help Scout Docs articles in WordPress pages/posts with shortcodes.
  * Version: 1.0.0
  * Author: Daan from FFW.Press
  * Author URI: https://ffw.press
@@ -22,7 +22,7 @@ define('DOCS_SHORTCODES_PLUGIN_BASE', plugin_basename(DOCS_SHORTCODES_PLUGIN_FIL
  *
  * @return mixed|void
  */
-function docs_shortcode_autoload($class)
+function help_scout_docs_shortcodes_autoload($class)
 {
     $path = explode('_', $class);
 
@@ -39,7 +39,7 @@ function docs_shortcode_autoload($class)
     return include DOCS_SHORTCODES_PLUGIN_DIR . 'includes/' . $autoload->load();
 }
 
-spl_autoload_register('docs_shortcode_autoload');
+spl_autoload_register('help_scout_docs_shortcodes_autoload');
 
 /**
  * All systems GO!!!
@@ -48,13 +48,13 @@ spl_autoload_register('docs_shortcode_autoload');
  */
 function help_scout_docs_shortcodes()
 {
-    static $hsds = null;
+    static $help_scout_docs_shortcodes = null;
 
-    if ($hsds === null) {
-        $hsds = new HelpScoutDocsShortcodes();
+    if ($help_scout_docs_shortcodes === null) {
+        $help_scout_docs_shortcodes = new HelpScoutDocsShortcodes();
     }
 
-    return $hsds;
+    return $help_scout_docs_shortcodes;
 }
 
 help_scout_docs_shortcodes();
