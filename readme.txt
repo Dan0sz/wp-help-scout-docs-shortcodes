@@ -12,7 +12,7 @@ Use shortcodes to embed Help Scout Docs articles in WordPress posts and pages.
 
 == Description ==
 
-Because the Help Scout Docs are not compliant with GDPR I created these shortcodes to embed the contents of Help Scout Docs articles in WordPress posts/pages using a shortcode.
+Because Help Scout Docs [isn't compliant with GDPR](https://docs.helpscout.com/article/1263-security-at-help-scout) I created these shortcodes to embed the contents of Help Scout Docs articles in WordPress posts/pages using a shortcode.
 
 Once contents from the Help Scout Docs API are retrieved they're cached in the database in the corresponding post's/page's metadata.
 
