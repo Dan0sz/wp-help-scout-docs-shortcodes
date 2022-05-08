@@ -41,7 +41,7 @@ You can refresh the contents of an article by appending `?refresh_docs=1` to the
 
 = Article =
 
-To render an article, simple use the following shortcode in your content:
+To embed an article, simply use the following shortcode within the content of any WordPress post/page:
 
 `[docs id="x"]`
 

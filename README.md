@@ -28,7 +28,7 @@ If your documentation section is too large to embed manually, or you simply don'
 You can refresh the contents of an article by appending `?refresh_docs=1` to the page's URL.
 
 ### Embed an Article
-To embed an article, simple use the following shortcode within the content of any WordPress Post/Page:
+To embed an article, simply use the following shortcode within the content of any WordPress post/page:
 
 `[docs id="x"]`
 
