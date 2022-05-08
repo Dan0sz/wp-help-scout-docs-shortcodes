@@ -1,5 +1,5 @@
 
-# Help Scout Docs Shortcode for WordPress
+# Help Scout Docs Shortcodes for WordPress
 
 Because Help Scout Docs [isn't compliant with GDPR](https://docs.helpscout.com/article/1263-security-at-help-scout) I created these shortcodes to embed the contents of Help Scout Docs articles in WordPress posts/pages using a shortcode.
 
