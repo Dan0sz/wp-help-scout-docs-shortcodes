@@ -77,7 +77,7 @@ class HelpScoutDocsShortcodes_Shortcodes_Docs
         $post_id   = get_the_ID();
         $post_meta = get_post_meta($post_id, self::META_KEY, true);
 
-        if (!$post_meta || isset($_GET['refresh_docs'])) {
+        if (!$post_meta || $this->should_refresh()) {
             $ch  = curl_init();
             $url = str_replace('{number}', $id, self::API_URL);
 
@@ -95,5 +95,13 @@ class HelpScoutDocsShortcodes_Shortcodes_Docs
         }
 
         return $post_meta;
+    }
+
+    /**
+     * Checks if the requested contents should be refreshed.
+     */
+    private function should_refresh()
+    {
+        return current_user_can('manage_options') && isset($_GET['refresh_docs']);
     }
 }

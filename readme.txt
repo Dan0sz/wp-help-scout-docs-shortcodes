@@ -90,6 +90,12 @@ That's it!
 
 == Frequently Asked Questions ==
 
+= How do I update an article's contents after I make edits? =
+
+You can refresh the contents of an article by appending `?refresh_docs=1` to the page's URL.
+
+
+
 == Screenshots ==
 
 == Changelog ==
