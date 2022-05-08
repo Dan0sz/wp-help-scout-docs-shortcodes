@@ -53,16 +53,19 @@ https://docs.ffw.press/article/**7**-quick-start
 
 = Child Pages Menu =
 
-To render an unordered list of a specified (`slug`) parent page.
+This is a powerful feature which allows you to imitate Category pages, i.e. to render an unordered list of children pages of a specified (by `slug`) parent page.
 
-If a `slug` isn't specified, it attempts to find a page using the last part of the current URI, combined with the `base` parameter.
-Usage
+If a `slug` isn't specified, it attempts to find a page using the last part of the current URL, combined with the `base` parameter.
 
-`[child_pages_menu slug="my-page" base="knowledge-base"]`
+**Example**: `[child_pages_menu slug="my-page" base="knowledge-base"]`
 
 This shortcode will return the children pages of a page located at `knowledge-base/my-page`.
 
-If a slug is not specified, e.g. `[child_pages_menu base="animals"]` and this shortcode is called on `https://yourdomain.com/awesome-stuff/cool-hamsters`, then it will attempt to render the child pages of a page located at `animals/cool-hamsters`.
+If a slug is not specified, e.g. 
+
+`[child_pages_menu base="animals"]`
+
+ and this shortcode is called on `https://yourdomain.com/awesome-stuff/cool-hamsters`, then it will attempt to render the child pages of a page located at `animals/cool-hamsters`.
 
 You can also hide some child pages by specifying their ID's in a comma separated list, e.g.
 
@@ -76,11 +79,14 @@ That's it!
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/host-webfonts-local` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/help-scout-docs-shortcodes` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the Settings -> Optimize Google Fonts screen to configure the plugin
+3. [Create an API key](https://developer.helpscout.com/docs-api/) and add it to your **wp-config.php** file, right before `/* That's all, stop editing! Happy publishing. */`, e.g.
 
-For a more comprehensive guide on configuring OMGF, check out the [user manual](https://ffw.press/docs/omgf-pro/)
+   define('HELP_SCOUT_DOCS_API_KEY', 'your-api-key');
+   /* That's all, stop editing! Happy publishing. */
+
+4. Create new pages/posts in your WordPress admin area and use the shortcodes to embed Docs articles. 
 
 == Frequently Asked Questions ==
 
