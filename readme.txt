@@ -1,4 +1,4 @@
-=== Help Scout Docs Shortcodes ===
+=== Shortcodes for Help Scout Docs ===
 Contributors: DaanvandenBergh
 Tags: gdpr, help scout, docs, shortcodes
 Requires at least: 4.6
