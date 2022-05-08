@@ -39,7 +39,7 @@ If your documentation section is too large to embed manually, or you simply don'
 
 You can refresh the contents of an article by appending `?refresh_docs=1` to the page's URL.
 
-= Article =
+= Embed an Article =
 
 To embed an article, simply use the following shortcode within the content of any WordPress post/page:
 
@@ -51,7 +51,7 @@ https://docs.ffw.press/article/**7**-quick-start
 
 "7" is the articles id, or "number" as it is called in Help Scout's documentation.
 
-= Child Pages Menu =
+= Create Child Page Menus =
 
 This is a powerful feature which allows you to imitate Category pages, i.e. to render an unordered list of children pages of a specified (by `slug`) parent page.
 

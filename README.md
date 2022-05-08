@@ -38,7 +38,7 @@ https://docs.ffw.press/article/**7**-quick-start
 
 "7" is the articles id, or "number" as it is called in Help Scout's documentation.
 
-### Child Pages Menu
+### Create Child Page Menus
 
 This is a powerful feature which allows you to imitate Category pages, i.e. to render an unordered list of children pages of a specified (by `slug`) parent page.
 
@@ -76,5 +76,5 @@ That's it!
    define('HELP_SCOUT_DOCS_API_KEY', 'your-api-key');
    /* That's all, stop editing! Happy publishing. */
    ````
-   
+
 4. Create new pages/posts in your WordPress admin area and use the shortcodes to embed Docs articles.
