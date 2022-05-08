@@ -81,13 +81,13 @@ class HelpScoutDocsShortcodes_Shortcodes_Docs
             $ch  = curl_init();
             $url = str_replace('{number}', $id, self::API_URL);
 
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_USERPWD, HELP_SCOUT_DOCS_API_KEY . ':x');
+            $response = Requests::get(
+                $url,
+                null,
+                ['auth' => [HELP_SCOUT_DOCS_API_KEY, 'x']]
+            );
 
-            $response = json_decode(curl_exec($ch));
-
-            curl_close($ch);
+            $response = json_decode($response->body ?? '');
 
             $post_meta = $response->article->text ?? '';
 
