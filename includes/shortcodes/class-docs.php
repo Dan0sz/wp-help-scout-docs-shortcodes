@@ -78,7 +78,6 @@ class HelpScoutDocsShortcodes_Shortcodes_Docs
         $post_meta = get_post_meta($post_id, self::META_KEY, true);
 
         if (!$post_meta || $this->should_refresh()) {
-            $ch  = curl_init();
             $url = str_replace('{number}', $id, self::API_URL);
 
             $response = Requests::get(
